@@ -6,6 +6,11 @@ import os
 app = Flask(__name__)
 load_dotenv()
 
+# create .env file
+# format :::
+# email = your_email
+# pass = your_password
+
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
